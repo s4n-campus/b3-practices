@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+    dummy_services:
+        image: s4ncampus/b3-dummy-services:0.0.1-SNAPSHOT
+    toxiproxy:
+        image: shopify/toxiproxy:2.1.4
+        ports:
+            - "8474:8474"
+            - "10000:10000"
+            - "10001:10001"
